@@ -1,0 +1,23 @@
+{
+  "name": "se-2",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/backend",
+      "packages/frontend"
+    ]
+  },
+  "scripts": {
+    "postinstall": "husky install",
+    "precommit": "lint-staged"
+  },
+  "packageManager": "yarn@3.2.3",
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  }
+}
